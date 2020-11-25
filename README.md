@@ -1,11 +1,16 @@
 # Providus
 
-Multi-Container app for Providus
+## Multi-Container Nagios application for Providus
 
-First build image with
+### Installation notes
 
-`docker build --rm -t local/nagios:latest`
+First we need to build image with following command:
 
+```
+docker build --rm -t local/nagios:latest
+```
 Then run Container
 
-`docker run --privileged --name nagios -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 -d local/nagios:latest`
+```
+docker run --privileged --name nagios -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 -d local/nagios:latest
+```
