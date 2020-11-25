@@ -14,3 +14,5 @@ Then run Container
 ```
 docker run --privileged --name nagios -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 8080:80 -d local/nagios:latest
 ```
+
+**we should try this with debian buster slim docker image** 
