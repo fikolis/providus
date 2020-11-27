@@ -1,5 +1,5 @@
 FROM centos/systemd
-MAINTAINER "fikolis" <fikolis@pm.me> tn
+LABEL maintainer="fikolis@pm.me"
 RUN yum update; yum -y install \
   which \
   gcc \
